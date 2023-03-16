@@ -48,7 +48,7 @@
         </p>
       </div>
       <div class="bg-white rounded-lg shadow-md p-4">
-        <h2 class="text-lg text-red-400 font-semibold mb-4">What is Event loop in JavaScript? How it works?
+        <h2 class="text-lg text-red-400 font-semibold mb-4">3. What is Event loop in JavaScript? How it works?
         </h2>
         <p class="text-gray-700 mb-4" id="answer1">
           The event loop is responsible for taking tasks from a queue and processing them one at a time. It constantly
@@ -59,15 +59,40 @@
 
     </div>
 
-    <h1 class="text-4xl text-blue-500 font-bold my-8 text-center">Few More Questions</h1>
-    <div class="grid grid-cols-2 gap-3">
+    <h1 class="text-4xl text-blue-500 font-bold my-8 text-center">Explain Functions</h1>
+    <div class="grid grid-cols-2 gap-3 mb-10">
       <div class="bg-white rounded-lg shadow-md p-4">
-        <h2 class="text-lg text-blue-500 font-semibold mb-4">1.Function</h2>
-        <p class="text-gray-700 mb-4" id="answer3">.</p>
+        <h2 class="text-lg text-blue-500 font-semibold mb-4">1. quizTimer</h2>
+        <p class="text-gray-700 mb-4" id="answer3">The <span class="text-blue-600">`quiztimer`</span> function handles a
+          timer. The function takes a parameter <span class="text-blue-600">`dismiss`</span> which determines whether to
+          clear the timer or not. If <span class="text-blue-600">`dismiss`</span>
+          is truthy (null, undefined, or NaN), the <span class="text-blue-600">`clearInterval`</span>
+          method is called on the global
+          timer variable, which stops the timer. If <span class="text-blue-600">`dismiss`</span> is falsy, the function
+          starts the timer by calling the
+          <span class="text-blue-600">`setInterval`</span> method on the global timer variable. The <span
+            class="text-blue-600">`setInterval`</span> method sets a callback function that will
+          be
+          executed every 1000 milliseconds.
+        </p>
       </div>
       <div class="bg-white rounded-lg shadow-md p-4">
-        <h2 class="text-lg text-blue-500 font-semibold mb-4">2.</h2>
-        <p class="text-gray-700 mb-4" id="answer4"> </p>
+        <h2 class="text-lg text-blue-500 font-semibold mb-4">2. chooseQuiz</h2>
+        <p class="text-gray-700 mb-4" id="answer4">The <span class="text-blue-600">`chooseQuiz`</span> function takes an
+          index and a given answer as
+          parameters. It checks if an element with the same ID as the quiz data at the given index exists in the
+          <span class="text-blue-600">`answers`</span>
+          array. If it exists, it updates the given answer for that quiz. Otherwise, it adds a new quiz with the given
+          answer to the <span class="text-blue-600">`answers`</span> array. Finally, it calls a <span
+            class="text-blue-600">`displayAnswers`</span>`displayAnswers` function with the updated <span
+            class="text-blue-600">`answers`</span> array
+          as an
+          argument.
+
+          <span class="text-blue-600">`quiztimer`</span>
+
+
+        </p>
       </div>
     </div>
   </div>
